@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Price Calculator</title>
+</head>
+<body>
+    <h1>Total Price Calculator</h1>
+
+    <table>
+        <tr>
+            <td><label for="price">Price:</label></td>
+            <td><input type="text" id="price" placeholder="Enter price"></td>
+        </tr>
+        <tr>
+            <td><label for="tax">Tax (%):</label></td>
+            <td><input type="text" id="tax" placeholder="Enter tax rate"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="showTotal()">Calculate</button>
+                <button onclick="clearEntries()">Clear</button>
+            </td>
+        </tr>
+    </table>
+
+    <p style="font-weight: bold;">Result:</p>
+    <p>Total Price: <span id="total"></span></p>
+
+    <script src="price.js"></script>
+</body>
+</html>
